@@ -1,3 +1,7 @@
+import { BiGlobe } from 'react-icons/bi'
+import { RiUserFill,RiUserAddFill } from 'react-icons/ri'
+
+
 export default function Header(){
     return(
         <div className="bg-brand-color ">
@@ -7,14 +11,17 @@ export default function Header(){
                 </a>
 
                 <nav className="flex gap-x-8 text-sm font-semibold">
-                    <a href="" className="text-white transition-all text-opacity-80 hover:text-opacity-100">
+                    <a href="" className="flex items-center gap-x-2 text-white transition-all text-opacity-80 hover:text-opacity-100">
+                        <BiGlobe size={20}/>
                         Türkçe (TR)
                     </a>
-                    <a href="" className="text-white transition-all text-opacity-80 hover:text-opacity-100">
+                    <a href="" className="flex items-center gap-x-2 text-white transition-all text-opacity-80 hover:text-opacity-100">
+                        <RiUserFill size={20}/>
                         Giriş Yap
                     </a>
-                    <a href="" className="text-white transition-all text-opacity-80 hover:text-opacity-100">
-                        Kayıt Ol eren deneme
+                    <a href="" className="flex items-center gap-x-2 text-white transition-all text-opacity-80 hover:text-opacity-100">
+                    <RiUserAddFill size={20}/>
+                        Kayıt Ol
                     </a>
                 </nav>
             </div>
