@@ -14,7 +14,7 @@ export default function Header(){
                         Giriş Yap
                     </a>
                     <a href="" className="text-white transition-all text-opacity-80 hover:text-opacity-100">
-                        Kayıt Ol
+                        Kayıt Ol eren deneme
                     </a>
                 </nav>
             </div>
