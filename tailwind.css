@@ -12,7 +12,9 @@
         @apply antialiased
     }
 }
-
+.flag-select{
+    @apply !pb-0
+}
 .flag-select button{
     @apply h-14 border-2 border-gray-200 transition-colors bg-white rounded hover:border-primary-brand-color
 }
