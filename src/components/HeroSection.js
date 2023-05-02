@@ -50,7 +50,7 @@ export default function HeroSection(){
                       selected={selected}
                       className="flag-select"
                     />
-                  <div className="flex-1"> 49:55 devam
+                  <div className="flex-1"> 
                       <input className="h-14 px-4 border-2 border-gray-200 rounded w-full transition-colors hover:border-primary-brand-color outline-none"/>
                   </div>    
                 </div>
