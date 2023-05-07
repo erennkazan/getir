@@ -37,7 +37,7 @@ export default function HeroSection(){
               <div>
                 <img className="w-full h-[500px] object-cover" src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg"/>
               </div>
-        </Slider>
+            </Slider>
           <div className="container flex justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
              <div className="flex flex-col gap-y-8">
              <img src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"/>
