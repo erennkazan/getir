@@ -635,6 +635,10 @@ html, body {
   z-index: 20;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -651,6 +655,10 @@ html, body {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-12 {
+  margin-right: 3rem;
 }
 
 .block {
@@ -824,6 +832,10 @@ html, body {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-4 {
