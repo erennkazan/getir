@@ -4,23 +4,22 @@ import Banners from 'api/banners.json';
 import Title from 'components/ui/Title';
 import {IoIosArrowBack , IoIosArrowForward} from 'react-icons/io'
 
-function NextBtn(props) {
-  const { className, style, onClick } = props;
-  return(
-    <button className="{className} style={style} onClick={onClick}">
-       <IoIosArrowForward/>
-    </button>
-  ) 
-}
-function PrevBtn(props) {
-  const { className, style, onClick } = props;
+function NextBtn({ className, style, onClick }) {
   return (
-    <button className="{className} style={style} onClick={onClick}">
-      <IoIosArrowBack/>
-    </button> 
-  ) 
-    
+      <button className={`text-brand-color absolute top-1/2 -right-6 -translate-y-1/2`} onClick={onClick}>
+          <IoIosArrowForward size={22} />
+     </button>
+  )
 }
+
+function PrevBtn({ className, style, onClick }) {
+  return (
+      <button className={`text-brand-color absolute top-1/2 -left-6 -translate-y-1/2`} onClick={onClick}>
+          <IoIosArrowBack size={22} />
+      </button>
+  )
+}
+
 
 
 function SamplePrevArrow(props) {
