@@ -85,6 +85,14 @@ export default function Footer(){
                     </section>
                     {menus.map((menu,index) => <Menu key={index} {...menu} />)}
                 </div>
+                <div className="flex justify-between items-center border-t border-gray-100 mt-6 py-6">
+                    <div className="text-xs text-gray-700 flex gap-x-8">
+                        &copy; 2023 Getir
+                        <a href="#" className="text-primary-brand-color hover:underline">
+                        Bilgi Toplumu Hizmetleri
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     )
