@@ -1,6 +1,6 @@
 export default function Title({children}){
     return(
-        <h3 className="text-sm font-semibold mb-3">{children}</h3>
+        <h3 className="text-sm font-semibold mb-3 md:px-0">{children}</h3>
     
     )
 }

@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import Banners from 'api/banners.json';
 import Title from 'components/ui/Title';
 import {IoIosArrowBack , IoIosArrowForward} from 'react-icons/io'
+import { useWindowWidth } from '@react-hook/window-size'
 
 function NextBtn({ className, style, onClick }) {
   return (
@@ -36,7 +37,7 @@ function SamplePrevArrow(props) {
 export default function Campaigns(){
 
     const [banners, setBanners] = useState([]);
-
+    const windowWidth = useWindowWidth()
     useEffect(() =>{
         setBanners(Banners);
     },[])
@@ -80,13 +81,15 @@ export default function Campaigns(){
       };
  
     return(
-        <div className="container mx-auto py-8">
+        <div className="container mx-auto md:pt-8">
+            <div className="hidden md:block">
             <Title>Kampanyalar</Title>
-            <Slider className="-mx-2" {...settings}>
+            </div>
+            <Slider className="md:-mx-2" {...settings}>
               {banners.length && banners.map((banner,index) => (
                 <div key={banner.id}>
-                    <picture className="block px-2">
-                      <img src={banner.image} className="rounded-lg"/>
+                    <picture className="block md:px-2">
+                      <img src={banner.image} className="md:rounded-lg"/>
                     </picture>
                     
                 </div>
