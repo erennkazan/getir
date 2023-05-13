@@ -1,4 +1,7 @@
-import Menu from 'components/ui/Menu'
+import Menu from 'components/ui/Menu';
+import {FaFacebook,FaTwitter,FaInstagram} from 'react-icons/fa'
+import { BiGlobe } from 'react-icons/bi'
+
 export default function Footer(){
 
     const menus = [
@@ -92,6 +95,21 @@ export default function Footer(){
                         Bilgi Toplumu Hizmetleri
                         </a>
                     </div>
+                    <nav className="flex  gap-x-3">
+                        <a href="#" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
+                            <FaFacebook size={21}/>
+                        </a>
+                        <a href="#" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
+                            <FaTwitter size={21}/>
+                        </a>
+                        <a href="#" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
+                            <FaInstagram size={21}/>
+                        </a>
+                        <a href="#" className="h-8 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color hover:border-transparent flex items-center px-2 text-sm gap-x-2 rounded text-gray-500 border border-gray-100">
+                            <BiGlobe size={18} />
+                            Türkçe (TR)
+                        </a> 
+                    </nav>
                 </div>
             </div>
         </div>
